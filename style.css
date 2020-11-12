@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+    box-sizing: border-box;
+    max-width: 1440px;
+    font-family: 'Manrope', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Manrope', sans-serif;
+    font-style: 800;
+    font-weight: bold !important;
+    font-size: 70px; 
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+} 
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+
+/* ===== Header ===== */
+
+.header {
+    background-color:#000000;
+    padding: 18.5px 0;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    min-height: 72px;
+    height: auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    max-width: 788px;
+    min-height: 72px;
+    height: auto;
+}
+
+.header__nav_logo {
+    display: inline-block;
+    width: 106px;
+    min-height: 28px;
+    height: auto;
+}
+
+.header__nav_items {
+    display: flex;
+    max-width: 377px;
+    width: 100%;
+    min-height: 20px; 
+}
+
+.header__nav_items a {
+    margin-right: 32px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.header__nav__burgerMenu {
+    display: none;
+}
+
+.header__buttons {
+    max-width: 214px;
+}
+
+.header__buttons_loginButtons {
+    display: flex;
+    min-width: 214px;
+    margin-top: 18.5px;
+}
+
+.header__buttons_loginButtons button {
+    background:#9B44FF;
+    border-radius: 8px;
+    border: none;
+    min-width: 100px;
+    width: 100%;
+    height: 35px;
+    color:#fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.header__buttons_loginButtons button:last-child {
+    margin-left: 14px;
+}
+
+.header__buttons_loginButtons .active {
+    background:  #F1E4FF;
+    color: #9B44FF;
+}
+
+
+/* ===== Start block ===== */
+
+.startBlock {
+    background-color: black;
+    padding: 175px 0;
+}
+  
+.startBlock__row {
+    min-height: 400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.startBlock__friendly {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 45%;
+    max-width: 540px;
+    min-height: 234px;
+
+}
+
+.startBlock__friendly h2 {
+    min-height: 80px;
+    height: auto;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 16px;
+}
+
+.startBlock__friendly p {
+    min-height: 64px;
+    width:auto;
+    height: auto;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.startBlock__friendly button {
+    background:#9B44FF;
+    border-radius: 8px;
+    border: none;
+    width: 196px;
+    height: 50px;
+    color:#fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.startBlock__logo {
+    display: flex;
+    width: 43.6666667%;
+    max-height: 400px;
+    margin-left: 68px;
+}
+
+.startBlock__logo img {
+    max-width: 524px;
+    max-height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===== Steps block ===== */
+
+.stepsBlock {
+    background-color: #fff;
+    padding-bottom: 68px;
+    padding-top: 181px;
+}
+
+.stepsBlock__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.stepsBlock__row h2 {
+    margin-bottom: 64px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.stepsBlock__items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* ===== AppScreen block ====== */
+
+.appScreenBlock {
+    background: #fff;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.appScreenBlock__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.appScreenBlock h2 {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 64px;
+    margin-top: 0;
+}
+
+.appScreenBlock__row__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.appScreenBlock__row__phoneBlock {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1062px;
+    min-height: 548px; 
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.phoneBlock__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.phoneBlock__image {
+    padding: 0 57.5px;
+    width:100%;
+    max-width: 982px;
+}
+
+.phoneBlock__leftArrow, .phone-block__rightArrow {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sliderDots {
+    margin: 0 auto;
+}
+
+.sliderDots ul{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sliderDots ul li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.sliderDots .active {
+    width: 12px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkblue; 
+}
+
+
+
+/* ===== Contact form ===== */
+
+.contactForm {
+    background: #fff;
+    padding-top: 68px;
+    padding-bottom: 136px;
+}
+
+.contactForm__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 18px;
+    padding-top: 8px;
+}
+
+.contactForm__creative {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    max-width: 607px;
+    max-height: 607px;
+}
+
+.contactForm__creative img {
+    display: flex;
+    align-items: center;
+    max-width: 607px;
+    max-height: 607px;
+}
+
+.contactForm__row__form {
+    width: 50%;
+    max-width: 486px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.contactForm__items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+}
+
+.contactForm__items h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 64px;
+    width: 270px;
+    height: 64px;
+    margin-bottom: 32px;
+    color: #000000;
+}
+
+.contactForm__items input {
+    max-width: 486px;
+    height: 45px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: #F9F9F9;
+    border: none;
+    padding-left: 24px;
+}
+
+.contactForm__items button {
+    max-width: 511px;
+    height: 55px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: #9B44FF;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* ====== Footer ====== */
+
+.footer {
+    background-color: #000;
+}
+
+.footerWrapper {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+    max-width: 993px;
+    min-height: 343px;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 18px;
+    padding-top: 8px;
+}
+
+.footerItemBlock__first {
+    display: flex;
+    justify-content: space-between;
+    min-height: 312px;
+    height: auto;
+}
+
+.footerItemBlock__first ul {
+    padding-left: 0;
+}
+
+.footerItemBlock__first ul li {
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footerItemBlock__first ul li h4 {
+    margin-bottom: 12px;
+    margin-top: 72px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.footerItemBlock__first__col1, 
+.footerItemBlock__first__col2, 
+.footerItemBlock__first__col3 {
+    max-width: 255px;
+    min-height: 184px;
+}
+
+.footerItemBlock__first__col4 {
+    max-width: 162px;
+    margin-bottom: 12px;
+}
+
+.footerItemBlock__second {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    color: #fff;
+}
+
+.footerItemBlock__second__allRights {
+    width: 100%;
+    max-width: 540px;
+}
+
+.footerItemBlock__second__socialMedia {
+    width: 50%;
+    max-width: 540px;
+    text-align: right;
+}
+
+.footerItemBlock__second__socialMedia a {
+    border-radius: 50%;
+    margin-left: 24px;
+}
+
+
+/* ===================== Media screen ===================== */
+
+@media screen and (max-width: 420px) {
+    
+    /* === Header === */
+    .header__row, .header__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav__burgerMenu {
+        display: flex;
+        margin: 10px;
+        background: #9B44FF;
+        color: #000;
+        border-radius: 8px;
+        padding: 5px;
+    }
+
+    .header__nav__burgerMenu:hover {
+        background: black;
+    }
+
+    .header__nav_items {
+        display: none;
+    }
+
+    /* === Start block === */
+
+    .startBlock__row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .startBlock__friendly {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .startBlock__logo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* === Steps block === */
+
+    .stepsBlock__items { 
+        flex-direction: column;
+        align-items: center;
+    }
+    .stepsBlock__row h2 {
+        text-align: center;
+    }
+
+    /* === AppScreen block ===  */
+
+    .appScreenBlock__row img{ 
+        align-items: center;
+    }
+    .appScreenBlock__row h2{ 
+        text-align: center;
+    }
+
+    .sliderDots {
+        align-items: center;
+    }
+    .phoneBlock__leftArrow, 
+    .phone-block__rightArrow {
+        display: none;
+    }
+
+    /* === Contact form === */
+
+    .contactForm__row {
+        flex-direction: column;
+        align-items: center;
+    } 
+    .contactForm__creative {
+        width: 100%;
+        margin-bottom: 10px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .contactForm__row__form {
+        width: 100%;
+    }
+
+    .contactForm__items h2 {
+       margin: 0 auto;
+    }
+
+    /* === Footer === */
+
+    .footerItemBlock__first {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+        margin-bottom: 10px;
+    }
+
+    .footerItemBlock__second {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footerItemBlock__second__allRights {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerItemBlock__second__socialMedia {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .footerItemBlock__first__col1, 
+    .footerItemBlock__first__col2, 
+    .footerItemBlock__first__col3 {
+        margin: 0 auto;
+    }
+}
